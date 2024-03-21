@@ -44,10 +44,7 @@ def check():
 
 
 
-
-
-
-st.title("Laptop Predictor")
+st.title("Laptop Price Predictor")
 
 
 #Brand name
@@ -92,7 +89,7 @@ gpu=st.selectbox('GPU',df['Gpu brand'].unique())
 os=st.selectbox('OS',df['os'].unique())
 
 
-if st.button("Laptop Price"):
+if st.button("Predict Button"):
     # Query
     ppi=None
     if touchscreen == 'Yes':
