@@ -112,7 +112,7 @@ if st.button("Predict Button"):
     query = query.reshape(1,12)
     print("Data:",query)
     pipe1=check()
-    st.title(pipe1.predict(query))
+    st.title("The predicted price of this configuration is " + str(int(np.exp(pipe1.predict(query)[0]))))
     print("Orgial Data",query)
     
 
