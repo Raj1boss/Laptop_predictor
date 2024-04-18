@@ -13,7 +13,8 @@ df=pickle.load(open('df.pkl','rb'))
 
 def check():
     X=df[['Company', 'TypeName', 'Ram', 'Weight','TouchScreen', 'Ips',
-       'ppi', 'Cpu_brand', 'HDD', 'SSD', 'Gpu brand', 'os']]
+       'ppi', 'Cpu_brand', 'HDD', 'SSD', 'Gpu brand', 3
+       'os']]
 
     y=(df['Price'])
     X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.15,random_state=2)
@@ -36,7 +37,7 @@ def check():
 
     pipe1.fit(X_train,y_train)
 
-    y_pred=pipe1.predict(X_test)
+    # y_pred=pipe1.predict(X_test)
     return pipe1
 
 
