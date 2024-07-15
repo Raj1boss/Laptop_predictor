@@ -13,7 +13,7 @@ df=pickle.load(open('df.pkl','rb'))
 
 def check():
     X=df[['Company', 'TypeName', 'Ram', 'Weight','TouchScreen', 'Ips',
-       'ppi', 'Cpu_brand', 'HDD', 'SSD', 'Gpu brand', 3
+       'ppi', 'Cpu_brand', 'HDD', 'SSD', 'Gpu brand',
        'os']]
 
     y=(df['Price'])
